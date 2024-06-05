@@ -476,6 +476,15 @@
   
 </li>
         
+          <li class="md-nav__item">
+  <a href="#xztrainer.model.XZTrainerConfig.tracker_init_kwargs" class="md-nav__link">
+    <span class="md-ellipsis">
+      tracker_init_kwargs
+    </span>
+  </a>
+  
+</li>
+        
       </ul>
     </nav>
   
@@ -786,6 +795,15 @@
   <a href="#xztrainer.model.XZTrainerConfig.tracker_config" class="md-nav__link">
     <span class="md-ellipsis">
       tracker_config
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#xztrainer.model.XZTrainerConfig.tracker_init_kwargs" class="md-nav__link">
+    <span class="md-ellipsis">
+      tracker_init_kwargs
     </span>
   </a>
   
@@ -1370,7 +1388,29 @@ Module object can be used to pass its parameters to Optimizer constructor, for e
 
     <div class="doc doc-contents ">
 
-      <p>Arbitrary config used for Accelerate experiment tracker. Directly passed to <code>accelerator.init_trackers(..., tracker_config)</code>. See <a href="https://huggingface.co/docs/accelerate/en/usage_guides/tracking">Accelerate docs</a></p>
+      <p>Arbitrary hyperparameters logged to experiment tracker.</p>
+    </div>
+
+</div>
+
+<div class="doc doc-object doc-attribute">
+
+
+
+<h3 id="xztrainer.model.XZTrainerConfig.tracker_init_kwargs" class="doc doc-heading">
+            <code class="highlight language-python"><span class="n">tracker_init_kwargs</span><span class="p">:</span> <span class="nb">dict</span><span class="p">[</span><span class="nb">str</span><span class="p">,</span> <span class="n">t</span><span class="o">.</span><span class="n">Any</span><span class="p">]</span> <span class="o">=</span> <span class="n">field</span><span class="p">(</span><span class="n">default_factory</span><span class="o">=</span><span class="nb">dict</span><span class="p">)</span></code>
+
+  <span class="doc doc-labels">
+      <small class="doc doc-label doc-label-class-attribute"><code>class-attribute</code></small>
+      <small class="doc doc-label doc-label-instance-attribute"><code>instance-attribute</code></small>
+  </span>
+
+</h3>
+
+
+    <div class="doc doc-contents ">
+
+      <p>Arbitrary keyword arguments used for Accelerate experiment tracker. Directly passed to <code>accelerator.init_trackers(...)</code>. See <a href="https://huggingface.co/docs/accelerate/en/usage_guides/tracking">Accelerate docs</a></p>
     </div>
 
 </div>
@@ -1595,7 +1635,7 @@ Module object can be used to pass its parameters to Optimizer constructor, for e
           <tr class="doc-section-item">
             <td><code>eval_data</code></td>
             <td>
-                  <code><span title="torch.utils.data.Dataset">Dataset</span> | None</code>
+                  <code><span title="typing.Optional">Optional</span>[<span title="torch.utils.data.Dataset">Dataset</span>]</code>
             </td>
             <td>
               <div class="doc-md-description">

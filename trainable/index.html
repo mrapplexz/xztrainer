@@ -622,6 +622,15 @@
 </li>
         
           <li class="md-nav__item">
+  <a href="#xztrainer.trainable.XZTrainable.tracker_config" class="md-nav__link">
+    <span class="md-ellipsis">
+      tracker_config
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
   <a href="#xztrainer.trainable.XZTrainable.update_metrics" class="md-nav__link">
     <span class="md-ellipsis">
       update_metrics
@@ -1059,6 +1068,15 @@
   <a href="#xztrainer.trainable.XZTrainable.step" class="md-nav__link">
     <span class="md-ellipsis">
       step
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#xztrainer.trainable.XZTrainable.tracker_config" class="md-nav__link">
+    <span class="md-ellipsis">
+      tracker_config
     </span>
   </a>
   
@@ -2289,6 +2307,54 @@ and non-distributed setups.</p>
           </tr>
       </tbody>
     </table>
+
+    </div>
+
+</div>
+
+<div class="doc doc-object doc-function">
+
+
+<h3 id="xztrainer.trainable.XZTrainable.tracker_config" class="doc doc-heading">
+            <code class="highlight language-python"><span class="n">tracker_config</span><span class="p">(</span><span class="n">context</span><span class="p">)</span></code>
+
+</h3>
+
+
+    <div class="doc doc-contents ">
+
+      <p>Function returning additional hyperparameters that will be logged to experiment tracker. This function
+is called once when training starts.</p>
+
+
+<p><span class="doc-section-title">Parameters:</span></p>
+    <table>
+      <thead>
+        <tr>
+          <th>Name</th>
+          <th>Type</th>
+          <th>Description</th>
+          <th>Default</th>
+        </tr>
+      </thead>
+      <tbody>
+          <tr class="doc-section-item">
+            <td><code>context</code></td>
+            <td>
+                  <code><a class="autorefs autorefs-internal" title="xztrainer.context.TrainContext" href="#xztrainer.context.TrainContext">TrainContext</a></code>
+            </td>
+            <td>
+              <div class="doc-md-description">
+                <p>Current <strong>train</strong> context</p>
+              </div>
+            </td>
+            <td>
+                <em>required</em>
+            </td>
+          </tr>
+      </tbody>
+    </table>
+      <p>Returns: Dictionary with additional parameter names and their values.</p>
 
     </div>
 
