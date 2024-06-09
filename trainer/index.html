@@ -485,6 +485,15 @@
   
 </li>
         
+          <li class="md-nav__item">
+  <a href="#xztrainer.model.XZTrainerConfig.tracker_logging_dir" class="md-nav__link">
+    <span class="md-ellipsis">
+      tracker_logging_dir
+    </span>
+  </a>
+  
+</li>
+        
       </ul>
     </nav>
   
@@ -804,6 +813,15 @@
   <a href="#xztrainer.model.XZTrainerConfig.tracker_init_kwargs" class="md-nav__link">
     <span class="md-ellipsis">
       tracker_init_kwargs
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#xztrainer.model.XZTrainerConfig.tracker_logging_dir" class="md-nav__link">
+    <span class="md-ellipsis">
+      tracker_logging_dir
     </span>
   </a>
   
@@ -1411,6 +1429,28 @@ Module object can be used to pass its parameters to Optimizer constructor, for e
     <div class="doc doc-contents ">
 
       <p>Arbitrary keyword arguments used for Accelerate experiment tracker. Directly passed to <code>accelerator.init_trackers(...)</code>. See <a href="https://huggingface.co/docs/accelerate/en/usage_guides/tracking">Accelerate docs</a></p>
+    </div>
+
+</div>
+
+<div class="doc doc-object doc-attribute">
+
+
+
+<h3 id="xztrainer.model.XZTrainerConfig.tracker_logging_dir" class="doc doc-heading">
+            <code class="highlight language-python"><span class="n">tracker_logging_dir</span><span class="p">:</span> <span class="n">t</span><span class="o">.</span><span class="n">Optional</span><span class="p">[</span><span class="nb">str</span><span class="p">]</span> <span class="o">=</span> <span class="kc">None</span></code>
+
+  <span class="doc doc-labels">
+      <small class="doc doc-label doc-label-class-attribute"><code>class-attribute</code></small>
+      <small class="doc doc-label doc-label-instance-attribute"><code>instance-attribute</code></small>
+  </span>
+
+</h3>
+
+
+    <div class="doc doc-contents ">
+
+      <p>Logging directory (or remote address) for Accelerate experiment tracker. If <code>None</code> - it will be set to <code>{project_dir}/runs</code> automatically.</p>
     </div>
 
 </div>
