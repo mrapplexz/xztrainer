@@ -604,6 +604,15 @@
 </li>
         
           <li class="md-nav__item">
+  <a href="#xztrainer.trainable.XZTrainable.on_register_objects" class="md-nav__link">
+    <span class="md-ellipsis">
+      on_register_objects
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
   <a href="#xztrainer.trainable.XZTrainable.on_update" class="md-nav__link">
     <span class="md-ellipsis">
       on_update
@@ -1050,6 +1059,15 @@
   <a href="#xztrainer.trainable.XZTrainable.on_pre_update" class="md-nav__link">
     <span class="md-ellipsis">
       on_pre_update
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#xztrainer.trainable.XZTrainable.on_register_objects" class="md-nav__link">
+    <span class="md-ellipsis">
+      on_register_objects
     </span>
   </a>
   
@@ -2155,6 +2173,26 @@ and non-distributed setups.</p>
           </tr>
       </tbody>
     </table>
+
+    </div>
+
+</div>
+
+<div class="doc doc-object doc-function">
+
+
+<h3 id="xztrainer.trainable.XZTrainable.on_register_objects" class="doc doc-heading">
+            <code class="highlight language-python"><span class="n">on_register_objects</span><span class="p">(</span><span class="n">trainer</span><span class="p">)</span></code>
+
+</h3>
+
+
+    <div class="doc doc-contents ">
+
+      <p>Callback that is called <strong>after</strong> preparing training pipeline objects with Accelerate and registering
+trainer state for checkpointing. You can register your custom objects for checkpointing here.
+Args:
+    trainer: Trainer instance.</p>
 
     </div>
 
