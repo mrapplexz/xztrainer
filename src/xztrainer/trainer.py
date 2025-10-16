@@ -380,4 +380,4 @@ class XZTrainer:
                     )
                     self.trainable.on_load(context, additional_state.passed_steps + 1)
                 self._train_epoch(context)
-        self.accelerator.end_training()
+        self.accelerator.wait_for_everyone()
